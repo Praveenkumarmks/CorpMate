@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CropMate - Farm Smarter. Grow Better. Together.</title>
+  <meta name="theme-color" content="#063B26">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="assets/logo.jpg" alt="CropMate logo">
+        <span>CropMate</span>
+      </div>
+      <nav id="sidebar-nav" aria-label="Main"></nav>
+    </aside>
+    <main id="main"></main>
+  </div>
+
+  <nav id="bottom-nav" class="bottom-nav" aria-label="Main"></nav>
+  <!-- AI assistant: round button + chat window -->
+  <button id="chat-fab" class="chat-fab" aria-label="Open CropMate AI assistant" title="Ask CropMate AI" hidden>
+    <img src="assets/logo.jpg" alt="">
+  </button>
+  <section id="chat-panel" class="chat-panel" role="dialog" aria-label="CropMate AI assistant" hidden></section>
+
+  <div id="overlay" class="overlay" hidden></div>
+
+  <!-- Plain scripts (not modules) so this page also works when opened by double-click. Order matters. -->
+  <script src="js/cm.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/localApi.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/voice.js"></script>
+  <script src="js/overlay.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/recordTypes.js"></script>
+  <script src="js/onboarding.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/data/diseaseSamples.js"></script>
+  <script src="js/pages/recordPage.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/notes.js"></script>
+  <script src="js/pages/harvest.js"></script>
+  <script src="js/pages/records.js"></script>
+  <script src="js/pages/analytics.js"></script>
+  <script src="js/pages/doctor.js"></script>
+  <script src="js/pages/market.js"></script>
+  <script src="js/pages/predictions.js"></script>
+  <script src="js/pages/settings.js"></script>
+  <script src="js/chatWidget.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
